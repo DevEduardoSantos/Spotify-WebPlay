@@ -1,0 +1,295 @@
+@font-face {
+  font-family: Spotify;
+  src: url(Fonts/Gotham-Bold.otf);
+}
+@font-face {
+    font-family: SpotifyLight;
+    src: url(Fonts/Gotham-Light.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gotham-Black";
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 8vh 100vh 6vh;
+  grid-template-areas:
+    "a h"
+    "a m"
+    "f f";
+}
+header {
+  background-color: rgb(14, 13, 13);
+  grid-area: h;
+}
+
+.images {
+  display: flex;
+  justify-content: flex-start;
+}
+img {
+  width: 60px;
+  height: 60px;
+  margin-top: 5px;
+}
+.h-page {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  padding: 10px;
+  color: rgb(172, 172, 172);
+  font-family: Spotify;
+  font-weight: 200;
+}
+li:hover {
+  color: white;
+  transform: scale(1.1);
+  background-position: -60px;
+}
+li:active {
+  transform: scale(1);
+  background-position: 500px;
+}
+
+.linha-vertical {
+  height: 30px;
+  border-left: 1px white solid;
+  margin-top: 7px;
+}
+#btn-enter {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 50px;
+  margin-top: -120px;
+  font-family: Spotify;
+}
+#btn-enter:hover {
+  transform: scale(1.1);
+  background-position: -60px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+#btn-enter:active {
+  transform: scale(1);
+  background-position: 500px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+/*-------------- End of Header ---------*/
+
+aside {
+  background-color: rgb(2, 2, 2);
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+aside ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  font-size: 12px;
+}
+.logo-aside {
+  margin-top: -38px;
+}
+.logo-aside img {
+  width: 120px;
+  height: 40px;
+  margin-right: 90px;
+}
+.aside-footer {
+  color: rgb(172, 172, 172);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  margin-top: 400px;
+
+  margin-right: 70px;
+}
+i {
+  color: white;
+  margin-right: 12px;
+}
+/*------------------ End of aside ----------------*/
+
+main {
+  background-color: rgb(20, 20, 20);
+  grid-area: m;
+
+}
+#head-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: white;
+    
+}
+#head-main h1{
+    margin-left: 90px;
+    font-family: Spotify;
+    font-size: 25px;
+    
+    
+}
+#head-main h2{
+    font-family: Spotify;
+    font-size: 18px;
+    padding-right: 30px;
+    
+}
+
+.div-main{
+    width: 190px;
+    height: 270px;
+    background-color: rgb(15, 15, 15);
+    margin: 7px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+
+    
+}
+.div-main:hover{
+    transition: 0.3s all;
+    background-color: rgb(54, 54, 54);
+    border-radius: 10px;
+    
+}
+.div-main h3{
+    text-align: left;
+    font-family: Spotify;
+    font-size: 16px;
+    margin-top: 14px;
+    margin-left: 15px;
+    
+}
+.div-main p{
+    text-align: left;
+    font-family: SpotifyLight;
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: 14px;
+    margin-left: 15px;
+    color: rgb(139, 139, 139); 
+}
+#m-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#d-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.img-main{
+    width: 160px;
+    height: 140px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    }
+   .p-list{
+    font-family: Spotify;
+    color: white;
+    margin-left: 60px;
+    margin-top: 10px;
+   }
+   .div-image{
+   display:inline-block;
+    position:relative;
+   }
+   .btn-play{
+    position:absolute;
+    top:90%;
+    left:80%;
+    -webkit-transform:translate3d(-50%, -50%, 0);
+    -moz-transform:translate3d(-50%, -50%, 0);
+    transform:translate3d(-50%, -50%, 0);
+    opacity: 0.0;
+    
+    background-color: green;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+   }
+   .btn-play:hover{
+    transition: 0.3s all;
+    position:absolute;
+    top:90%;
+    left:80%;
+    -webkit-transform:translate3d(-50%, -50%, 0);
+    -moz-transform:translate3d(-50%, -50%, 0);
+    transform:translate3d(-50%, -50%, 0);
+    opacity: 1;
+    
+    
+    background-color: green;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+   }
+    .fa-play{
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+    opacity: 0.9;
+   }
+   
+
+footer {
+  background-image: linear-gradient(
+    to right,
+    rgb(192, 49, 185),
+    rgb(116, 56, 228)
+  );
+  grid-area: f;
+}
+.f-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.d-left{
+    line-height: 14px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+    font-family: SpotifyLight;
+}
+#btn-insc{
+    margin-right: 30px;
+    margin-top: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-family: SpotifyLight;
+}
+
